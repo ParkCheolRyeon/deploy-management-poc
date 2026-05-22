@@ -19,13 +19,15 @@ deploy-management-poc/
 
 ## 개발
 
-```bash
-# fe dev (Turbopack)
-pnpm -F @deploy-management-poc/fe dev
+루트에서 실행:
 
-# be dev
-cd apps/be && go run .
+```bash
+pnpm run dev:fe   # Next.js (Turbopack) → http://localhost:3000
+pnpm run dev:be   # Go HTTP (Air live-reload) → http://localhost:8080
 ```
+
+`dev:be`는 Air를 통해 `apps/be/**/*.go` 변경 감지 시 자동 리빌드.
+Air 설치가 필요하면: `go install github.com/air-verse/air@latest`
 
 ## 인증
 

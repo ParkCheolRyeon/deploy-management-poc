@@ -2,7 +2,10 @@
   "name": "@deploy-management-poc/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev:fe": "pnpm -F @deploy-management-poc/fe dev",
+    "dev:be": "cd apps/be && air"
+  },
   "private": true,
   "dependencies": {
     "next": "~16.1.6",

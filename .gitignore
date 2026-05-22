@@ -62,7 +62,8 @@ test-output
 *.test
 *.out
 apps/be/bin/
-
+apps/be/tmp/
+apps/be/build-errors.log
 
 # Go build output at workspace root
 /be
